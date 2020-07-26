@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="43-38.css">
+</head>
+<body>
+     <!-- 1. Show an alert box on click on a link.  -->
+     <button onclick="alert('Welcome to Online Mobile shopping')">  Click here to Alert </button>
+     <!-- 2. Display some Mobile images in browser. On click on an image Show the message in alert to user -->
+      <div style="text-align: center; margin-top: 70px; ;">
+      <img onclick="alert('Thanks for purchasing from us')"  src="imgs/iphone.PNG" alt="">
+      <img onclick="alert('Thanks for purchasing from us')" src="imgs/mi.PNG" alt="">
+      <img onclick="alert('Thanks for purchasing from us')" src="imgs/moto.PNG" alt="">
+      <img onclick="alert('Thanks for purchasing from us')" src="imgs/samsung.PNG" alt="">
+              </div>
+  
+  
+  <!-- 3. Display students records in table and each row should contain a delete button. If you click on a button to delete a record, entire row should be deleted.  
+    -->
+              <form>
+                  <label for="item">Add  items: </label>
+                   <input id="item" type="text" size="20"><br>
+                  <input id="submitButton" type="button" value="Add!">
+              </form>
+              <ul id="ul">
+              </ul>
+              <p>
+                  Click an item to remove it from the list.
+             </p>  
+         
+  <!-- 5. Show a counter in browser. Counter should increase on click on increase 
+      button and decrease on click on decrease button. And show updated counter value in browser.  -->
+  
+             <input type="button" class="btn btn-success" value="increase" onclick="button1()">
+             <span id="output-area">0</span>
+             <input type="button" class="btn btn-success" value="decrease" onclick="button2()">
+<!-- task 3  -->
+             <div id = "image">
+                Hover over an image below to display here.
+            </div>
+            
+            <img class = "preview" alt = "iphone 11" src = "imgs/iphone.PNG" onmouseover = "upDate(this)" onmouseout = "unDo()">
+            
+            <img class = "preview" alt = "mi a2" src = "imgs/mi.PNG" onmouseover = "upDate(this)" onmouseout = "unDo()">
+            
+            <img class = "preview" src = "imgs/moto.PNG" alt = "moto e4plus" onmouseover = "upDate(this)" onmouseout = "unDo()">
+        <script src="43-48.js"></script>
+            <script src = "gallery.js"></script>
+      <script src="app1.js"></script>
+    <script src= "app.js"></script>
+</body>
+</html>

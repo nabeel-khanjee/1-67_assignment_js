@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>javascript assignment</title>
+  </head>
+
+  <body style="background-color: #211899; color: #fff;">
+    <div class="form_submission" id="form">
+      <input
+        type="text"
+        name="name"
+        value=""
+        id="your_firstName"
+        placeholder="First name"
+      />
+      <br />
+      <input
+        type="text"
+        name="name"
+        value=""
+        id="your_lastName"
+        placeholder="last name"
+      />
+      <br />
+      <input
+        type="email"
+        name="email"
+        value=""
+        id="email_add"
+        placeholder="Your email"
+      />
+      <br />
+      <input
+        type="password"
+        name="password"
+        value=""
+        id="password"
+        placeholder="Password"
+      />
+      <br />
+
+      <button type="button" name="button" onclick="submit()">Submit</button>
+    </div>
+
+    <div class="content-area" id="area">
+      <h1>CAR MODELS</h1>
+      <p id="content-para">
+        You can use your vehicle identification number (VIN) to find information
+        about your car, like equipment specifications, the model year and even
+        the factory where it was manufactured.<br />
+        Find your VIN on the driver's side dashboard. They've been 17 digits
+        long since model year 1981 <br />
+        <button href="javascript:void(0);" onClick="readmore()">
+          <em>Click for more.</em>
+        </button>
+      </p>
+    </div>
+
+    <div class="table" id="table_data">
+      <h1>Enter table data</h1>
+      <div class="tableInput">
+        <input
+          type="text"
+          name="first name"
+          value=""
+          id="name"
+          placeholder="First name"
+          required
+        />
+        <br />
+        <input
+          type="text"
+          name="last name"
+          value=""
+          id="lastName"
+          placeholder="Last name"
+        />
+        <br />
+        <input
+          type="text"
+          name="country"
+          value=""
+          id="country"
+          placeholder="Conutry"
+        />
+        <br />
+        <button type="button" name="button" id="btnAdd" onclick="addData()">
+          Add
+        </button>
+        <br />
+        <input
+          type="text"
+          name="delValue"
+          value=""
+          id="deleteValue"
+          placeholder="Enter serier no to delete a row"
+        />
+        <button type="button" name="button" onclick="deleteMe()">Delete</button>
+      </div>
+      <br />
+      <table border="1px">
+        <tr>
+          <th>S NO</th>
+          <th>NAME</th>
+          <th>LAST NAME</th>
+          <th>COUNTRY</th>
+        </tr>
+
+        <tr>
+          <td>1.</td>
+          <td>ABD</td>
+          <td>ABD</td>
+          <td>ABD</td>
+        </tr>
+
+        <tr>
+          <td>2.</td>
+          <td>ABD</td>
+          <td>ABD</td>
+          <td>ABD</td>
+        </tr>
+      </table>
+    </div>
+
+    <div>
+      <h1>DOM</h1>
+      <div id="form-content" class="content">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" />
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" /><label for="email">Email</label
+        ><input type="text" id="email" />
+      </div>
+
+      <div id="mainContent" class="content">
+        <p class="render" id="main_name">First Name : Alex</p>
+        <p class="render" id="lastName">Last Name: Bank</p>
+        <p class="render" id="main_email">Email : alexbank@example.com</p>
+        <p class="render" id="main_country">Country : Pakistan</p>
+        <p class="render" id="main_contact">contact : +92 300 1234567</p>
+      </div>
+    </div>
+
+    <script src="app.js" charset="utf-8"></script>
+    <!-- <script src="app2.js" charset="utf-8"></script> -->
+  </body>
+</html>
